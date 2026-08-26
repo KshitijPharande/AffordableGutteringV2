@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Mail, MapPin, Clock, ShieldCheck, CheckCircle2, Send, ChevronDown, Sparkles } from "lucide-react";
 import confetti from "canvas-confetti";
 import { COMPANY_INFO, SERVICES_DATA, FAQS } from "@/data/websiteData";
@@ -40,7 +41,12 @@ export default function ContactPage() {
       {/* Header */}
       <section className="relative py-20 bg-gradient-to-b from-[#09182B] to-[#050e1a] border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl"
+          >
             <span className="text-xs font-black tracking-widest text-amber-400 uppercase">
               Get In Touch & Beat Any Quote By 15%
             </span>
@@ -50,7 +56,7 @@ export default function ContactPage() {
             <p className="text-base sm:text-lg text-slate-300 mt-4 leading-relaxed">
               Serving Christchurch, Rangiora, Rolleston & Canterbury. Request your free on-site assessment with our 15% price beat promise.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -59,7 +65,13 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             {/* Left: Contact Info & Service Areas */}
-            <div className="lg:col-span-5 space-y-8">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-5 space-y-8"
+            >
               <div className="bg-[#09182B] border border-slate-800 rounded-3xl p-8 space-y-6">
                 <h2 className="text-2xl font-black uppercase text-white tracking-wide">
                   Direct Contact
@@ -138,10 +150,16 @@ export default function ContactPage() {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            {/* Right: Clean Inquiry Form (NO PRICES) */}
-            <div className="lg:col-span-7">
+            {/* Right: Clean Inquiry Form with Framer Motion */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-7"
+            >
               <div className="bg-[#09182B] border border-amber-500/30 rounded-3xl p-8 sm:p-10 shadow-2xl">
                 {!submitted ? (
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -278,17 +296,23 @@ export default function ContactPage() {
                       <span>15-Year Gutter & 30-Year Roof Warranty • 15% Price Beat Promise</span>
                     </div>
 
-                    <button
+                    <motion.button
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
                       type="submit"
                       disabled={loading}
                       className="w-full py-4 bg-gradient-to-r from-amber-400 via-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-sm uppercase tracking-wider rounded-xl shadow-lg hover:shadow-amber-500/25 transition-all flex items-center justify-center space-x-2 cursor-pointer"
                     >
                       <Send className="w-4 h-4" />
                       <span>{loading ? "Submitting Quote Request..." : "SUBMIT FOR 15% BEAT QUOTE"}</span>
-                    </button>
+                    </motion.button>
                   </form>
                 ) : (
-                  <div className="text-center py-12 space-y-6">
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="text-center py-12 space-y-6"
+                  >
                     <div className="w-16 h-16 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto">
                       <CheckCircle2 className="w-10 h-10" />
                     </div>
@@ -305,18 +329,24 @@ export default function ContactPage() {
                         Submit Another Inquiry
                       </button>
                     </div>
-                  </div>
+                  </motion.div>
                 )}
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* FAQ Accordion Section */}
+      {/* FAQ Accordion Section with Framer Motion AnimatePresence */}
       <section className="py-16 sm:py-20 bg-[#071526] border-t border-slate-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-12"
+          >
             <h2 className="text-3xl font-black uppercase tracking-tight text-white">
               FREQUENTLY ASKED QUESTIONS
             </h2>
@@ -324,7 +354,7 @@ export default function ContactPage() {
             <p className="text-slate-400 text-xs sm:text-sm mt-2">
               Everything you need to know about our Canterbury guttering, roof maintenance, and 15% price beat offer.
             </p>
-          </div>
+          </motion.div>
 
           <div className="space-y-4">
             {FAQS.map((faq, idx) => (
@@ -345,11 +375,21 @@ export default function ContactPage() {
                     }`}
                   />
                 </button>
-                {openFaq === idx && (
-                  <div className="px-6 pb-6 pt-1 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 animate-in fade-in duration-200">
-                    {faq.answer}
-                  </div>
-                )}
+                <AnimatePresence>
+                  {openFaq === idx && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.25 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="px-6 pb-6 pt-1 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60">
+                        {faq.answer}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             ))}
           </div>
