@@ -175,7 +175,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     title: "ROOF REPLACEMENT (30-YEAR WARRANTY)",
     shortDesc: "Full roof replacements with premium Colorsteel backed by an unmatched 30-year warranty.",
     fullDesc: "Complete re-roofing solutions for residential Canterbury homes. We strip old corroded iron or brittle concrete tiles and install modern, insulated long-run Colorsteel roofing engineered to last generations.",
-    image: "/images/roof.jpg",
+    image: "/images/service-roof-replacement.jpg",
     features: [
       "30-Year Roof Replacement Warranty",
       "Genuine NZ Colorsteel heavy-gauge profiles",
@@ -193,7 +193,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: "Official Branded Team On-Site Installation",
     category: "guttering",
     image: "/images/real-job-branded-installer.jpg",
-    description: "Our certified Affordable Guttering Ltd installer fitting Colorsteel downpipes and spouting on a Kiwi home."
+    description: "Our certified installer in official Affordable Guttering Ltd gear fitting Colorsteel downpipes and spouting on a Kiwi home."
   },
   {
     id: "gal-2",
@@ -253,52 +253,171 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "gal-10",
-    title: "Airless Spray Gun Roof Membrane Coating",
-    category: "roofing",
-    image: "/images/service-roof-painting.jpg",
-    description: "High-pressure airless spray gun coating providing thick, even weatherproofing across corrugated roofing."
+    title: "High-Reach Vacuum Gutter Extraction",
+    category: "cleaning",
+    image: "/images/IMG_6406.JPG",
+    description: "Safe ground-to-roof industrial vacuum cleaning removing compacted sludge and debris."
   },
   {
     id: "gal-11",
-    title: "Commercial Vacuum Gutter Extraction",
-    category: "cleaning",
-    image: "/images/service-gutter-cleaning.jpg",
-    description: "Multi-storey commercial vacuum cleaning sucking up heavy wet mud and leaves without roof damage."
+    title: "Residential Roofline & Gutter Renewal",
+    category: "guttering",
+    image: "/images/IMG_6491.JPG",
+    description: "Complete spouting replacement protecting home foundations from water ingress."
   },
   {
     id: "gal-12",
-    title: "Long-Run Colorsteel Re-Roof (30-Yr Warranty)",
-    category: "roofing",
-    image: "/images/roof.jpg",
-    description: "Full residential roof replacement engineered with heavy-gauge Colorsteel."
-  },
-  {
-    id: "gal-13",
-    title: "Architectural Half Round Spouting Install",
-    category: "guttering",
-    image: "/images/products.jpg",
-    description: "Self-flushing architectural Half Round profile on contemporary Kiwi home."
-  },
-  {
-    id: "gal-14",
     title: "Fascia Board Repainting & Colorsteel Panels",
     category: "fascia",
     image: "/images/IMG_7058.JPG",
     description: "Clean Colorsteel panel cladding over weathered timber fascias."
   },
   {
-    id: "gal-15",
-    title: "Roof Tile & Ridge Capping Leak Repair",
+    id: "gal-13",
+    title: "Airless Spray Gun Roof Membrane Coating",
+    category: "roofing",
+    image: "/images/IMG_7825.JPG",
+    description: "High-pressure airless spray gun coating providing thick, even weatherproofing across corrugated roofing."
+  },
+  {
+    id: "gal-14",
+    title: "Roof Tile & Ridge Capping Mortar Restoration",
     category: "roofing",
     image: "/images/IMG_7993 - Copy - Copy.JPG",
-    description: "Re-pointing fractured mortar ridge caps and replacing cracked tiles."
+    description: "Re-pointing fractured mortar ridge caps and replacing damaged concrete tiles."
+  },
+  {
+    id: "gal-15",
+    title: "Roof Valley & Spouting Maintenance",
+    category: "roofing",
+    image: "/images/IMG_8003 - Copy.JPG",
+    description: "Valley iron inspection, clearing, and flashing resealing."
   },
   {
     id: "gal-16",
-    title: "Canterbury Full Home Transformation",
+    title: "Commercial Vacuum Gutter Cleaning & Flow Test",
+    category: "cleaning",
+    image: "/images/IMG_8186.JPG",
+    description: "Downpipe flushed and certified 100% free of debris and blockages."
+  },
+  {
+    id: "gal-17",
+    title: "Heavy-Gauge Box Profile Colorsteel Installation",
+    category: "guttering",
+    image: "/images/IMG_8259.JPG",
+    description: "Traditional Box profile handling heavy rainfall intensity with fewer downpipes."
+  },
+  {
+    id: "gal-18",
+    title: "Pre-Paint Roof Soft Wash & Moss Treatment",
+    category: "roofing",
+    image: "/images/IMG_8487.JPG",
+    description: "Biodegradable biocidal moss and lichen elimination preserving roof integrity."
+  },
+  {
+    id: "gal-19",
+    title: "Full Canterbury Home Spouting Transformation",
     category: "guttering",
     image: "/images/IMG_8488.JPG",
     description: "Complete guttering, downpipe replacement, and fascia protection package."
+  },
+  {
+    id: "gal-20",
+    title: "Eaves Spouting & Downpipe Drainage Connection",
+    category: "guttering",
+    image: "/images/thumbnail_IMG_4397 - Copy.jpg",
+    description: "Clean connection to stormwater drainage with reinforced downpipe brackets."
+  },
+  {
+    id: "gal-21",
+    title: "Colorsteel Valley Iron & Gutter Alignment",
+    category: "guttering",
+    image: "/images/thumbnail_IMG_4401.jpg",
+    description: "Laser-leveled gutter fall ensuring zero standing water or sagging."
+  },
+  {
+    id: "gal-22",
+    title: "Fascia Board Timber Repair & Preparation",
+    category: "fascia",
+    image: "/images/thumbnail_IMG_7099.jpg",
+    description: "Treating and restoring timber fascia before fitting Colorsteel protective capping."
+  },
+  {
+    id: "gal-23",
+    title: "Gutter Vacuum Clean Inspection",
+    category: "cleaning",
+    image: "/images/thumbnail_IMG_7101.jpg",
+    description: "Spotless gutter channels and clear drain outlets after industrial vacuuming."
+  },
+  {
+    id: "gal-24",
+    title: "Multi-Storey Vacuum Gutter Clean",
+    category: "cleaning",
+    image: "/images/thumbnail_IMG_7102.jpg",
+    description: "Reaching high gutters safely without heavy ladders leaning on fragile spouting."
+  },
+  {
+    id: "gal-25",
+    title: "Downpipe Sludge & Root Extraction",
+    category: "cleaning",
+    image: "/images/thumbnail_IMG_7117.jpg",
+    description: "Removing stubborn downpipe clogs and restoring maximum storm flow."
+  },
+  {
+    id: "gal-26",
+    title: "Airless Spray Coating Coverage on Metal Roof",
+    category: "roofing",
+    image: "/images/thumbnail_IMG_7124.jpg",
+    description: "Thick, even acrylic membrane coverage with UV sun blockers."
+  },
+  {
+    id: "gal-27",
+    title: "Completed Colorsteel Roof Restoration Finish",
+    category: "roofing",
+    image: "/images/thumbnail_IMG_7125.jpg",
+    description: "Flawless factory-smooth roof finish with 30-year long-life protection."
+  },
+  {
+    id: "gal-28",
+    title: "Colorsteel Gutter Corner Jointing",
+    category: "guttering",
+    image: "/images/thumbnail_image.png",
+    description: "Riveted and sealed internal bracket corner construction."
+  },
+  {
+    id: "gal-29",
+    title: "Timber Fascia Replacement & Paint Finish",
+    category: "fascia",
+    image: "/images/thumbnail_image (2).png",
+    description: "Repainted and sealed timber fascia boards matching window joinery."
+  },
+  {
+    id: "gal-30",
+    title: "Full Spouting System & Downpipe Installation",
+    category: "guttering",
+    image: "/images/thumbnail_image (4).png",
+    description: "New marine-grade Colorsteel spouting with 15-year warranty."
+  },
+  {
+    id: "gal-31",
+    title: "Colorsteel Corrugated Roof & Gutter Synergy",
+    category: "roofing",
+    image: "/images/thumbnail_image (7).png",
+    description: "Architectural corrugated Colorsteel roof and gutter synergy."
+  },
+  {
+    id: "gal-32",
+    title: "Airless Spray Gun Roof Painting In Progress",
+    category: "roofing",
+    image: "/images/service-roof-painting.jpg",
+    description: "Tradesperson in harness applying protective weatherproof membrane with airless spray gun."
+  },
+  {
+    id: "gal-33",
+    title: "Long-Run Colorsteel Roof Replacement (30-Yr Warranty)",
+    category: "roofing",
+    image: "/images/service-roof-replacement.jpg",
+    description: "Brand new dark charcoal Colorsteel corrugated long-run roofline with 30-year warranty."
   }
 ];
 

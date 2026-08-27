@@ -56,10 +56,10 @@ export default function GalleryPage() {
               <span>Real Canterbury Workmanship • 100% Genuine Project Photos</span>
             </div>
             <h1 className="text-4xl sm:text-5xl font-black uppercase tracking-tight text-white mt-2">
-              PROJECT <span className="text-gradient-gold">GALLERY</span>
+              OUR <span className="text-gradient-gold">WORK</span>
             </h1>
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-              Explore our real on-site installations across Canterbury. From marine-grade Colorsteel gutters and fascia cover panels to airless spray roof restorations.
+              Explore our genuine on-site workmanship across Canterbury. From marine-grade Colorsteel gutters and fascia cover panels to airless spray roof restorations.
             </p>
           </motion.div>
         </div>
