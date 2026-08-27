@@ -68,20 +68,24 @@ export default function AboutPage() {
               <div className="bg-[#09182B] border border-amber-500/30 rounded-2xl p-6 space-y-4">
                 <h3 className="text-amber-400 font-extrabold text-base uppercase tracking-wider flex items-center space-x-2">
                   <ShieldCheck className="w-5 h-5 text-amber-400" />
-                  <span>Our 3-Pillar Commitment</span>
+                  <span>Our 4-Pillar Commitment</span>
                 </h3>
-                <ul className="space-y-3 text-xs sm:text-sm text-slate-200">
+                <ul className="space-y-3 text-xs text-slate-300">
                   <li className="flex items-start space-x-2.5">
                     <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                    <span><strong className="text-white">15% Price Beat Promise:</strong> We beat any genuine written Canterbury competitor quote by 15%.</span>
+                    <span><strong className="text-white">30-Year Roof Replacement Warranty:</strong> Long-life durability for all our heavy-gauge Colorsteel re-roofs and restorations.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
                     <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                    <span><strong className="text-white">15-Year Gutter & Downpipe Warranty:</strong> Maximum protection on our heavy-gauge Box, Quad, and Half Round profiles.</span>
+                    <span><strong className="text-white">15-Year Marine-Grade Colorsteel Warranty:</strong> Maximum protection on our heavy-gauge Box, Quad, and Half Round profiles.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
                     <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                    <span><strong className="text-white">30-Year Roof Warranty:</strong> Long-life durability for all our roofing repairs and protective restoration coatings.</span>
+                    <span><strong className="text-white">10-Year Leak-Free Guarantee:</strong> Total guarantee against water ingress or seam leaks across all gutters and downpipes.</span>
+                  </li>
+                  <li className="flex items-start space-x-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                    <span><strong className="text-white">15% Price Beat Pledge:</strong> We guarantee to beat any written competitor quote in Canterbury by 15%.</span>
                   </li>
                 </ul>
               </div>
@@ -99,8 +103,8 @@ export default function AboutPage() {
               </div>
               <div className="relative h-64 rounded-2xl overflow-hidden shadow-xl border border-slate-800 mt-8">
                 <Image
-                  src="/images/service-roof-repairs.jpg"
-                  alt="Roof repairs Christchurch roofer"
+                  src="/images/service-roof-painting.jpg"
+                  alt="Airless spray roof painting Christchurch roofer"
                   fill
                   className="object-cover"
                 />
@@ -115,20 +119,20 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl sm:text-5xl font-black text-amber-400">20+</div>
-              <div className="text-xs uppercase font-bold text-slate-300 mt-2">Years Canterbury Experience</div>
-            </div>
-            <div>
-              <div className="text-4xl sm:text-5xl font-black text-amber-400">15%</div>
-              <div className="text-xs uppercase font-bold text-slate-300 mt-2">Price Beat Guarantee</div>
+              <div className="text-4xl sm:text-5xl font-black text-amber-400">30-Yr</div>
+              <div className="text-xs uppercase font-bold text-slate-300 mt-2">Roof Replacement</div>
             </div>
             <div>
               <div className="text-4xl sm:text-5xl font-black text-amber-400">15-Yr</div>
-              <div className="text-xs uppercase font-bold text-slate-300 mt-2">Gutter Warranty</div>
+              <div className="text-xs uppercase font-bold text-slate-300 mt-2">Marine Colorsteel Gutters</div>
             </div>
             <div>
-              <div className="text-4xl sm:text-5xl font-black text-amber-400">30-Yr</div>
-              <div className="text-xs uppercase font-bold text-slate-300 mt-2">Roof Warranty</div>
+              <div className="text-4xl sm:text-5xl font-black text-amber-400">10-Yr</div>
+              <div className="text-xs uppercase font-bold text-slate-300 mt-2">Leak-Free Guarantee</div>
+            </div>
+            <div>
+              <div className="text-4xl sm:text-5xl font-black text-amber-400">15%</div>
+              <div className="text-xs uppercase font-bold text-slate-300 mt-2">Price Beat Promise</div>
             </div>
           </div>
         </div>

@@ -18,11 +18,14 @@ export default function Footer() {
             <div className="bg-[#09182B] border border-amber-500/30 rounded-xl p-3.5 space-y-2">
               <div className="flex items-center space-x-2 text-amber-400 font-bold text-xs">
                 <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>15-Yr Gutter & 30-Yr Roof Warranties</span>
+                <span>Canterbury Guarantee Package</span>
               </div>
-              <p className="text-[11px] text-slate-300">
-                Heavy-gauge Box, Quad & Half Round profiles. We beat any genuine Canterbury competitor quote by 15%.
-              </p>
+              <ul className="text-[11px] text-slate-300 space-y-1">
+                <li>• <strong className="text-white">30-Year</strong> Roof Replacement</li>
+                <li>• <strong className="text-white">15-Year</strong> Marine Colorsteel Gutters</li>
+                <li>• <strong className="text-white">10-Year</strong> Leak-Free Guarantee</li>
+                <li>• <strong className="text-amber-400">15% Price Beat</strong> on any quote</li>
+              </ul>
             </div>
           </div>
 

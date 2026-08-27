@@ -62,8 +62,33 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-sm sm:text-base text-slate-200 font-medium leading-relaxed drop-shadow max-w-lg"
             >
-              Professional guttering and roofing services you can rely on. Quality workmanship, honest pricing and guaranteed results.
+              Professional guttering and roofing services you can rely on. Quality workmanship, honest pricing and guaranteed results across Canterbury.
             </motion.p>
+
+            {/* Upfront Warranties Grid matching client specs */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.25 }}
+              className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 pb-1 text-xs"
+            >
+              <div className="flex items-center space-x-2 bg-slate-950/60 border border-amber-400/30 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
+                <span className="font-bold text-white">30-Year Roof Replacement</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-slate-950/60 border border-amber-400/30 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
+                <span className="font-bold text-white">15-Yr Marine-Grade Colorsteel</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-slate-950/60 border border-amber-400/30 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
+                <span className="font-bold text-white">10-Yr Leak-Free Guarantee</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-slate-950/60 border border-amber-400/30 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                <Award className="w-4 h-4 text-amber-400 shrink-0" />
+                <span className="font-bold text-white">15% Price Beat Promise</span>
+              </div>
+            </motion.div>
 
             {/* CTA Button matching reference */}
             <motion.div

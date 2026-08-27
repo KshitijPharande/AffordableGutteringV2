@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { CheckCircle2, ShieldCheck, PhoneCall, ArrowRight, Zap } from "lucide-react";
+import { CheckCircle2, ShieldCheck, PhoneCall, ArrowRight, Zap, Sparkles, Award } from "lucide-react";
 import { SERVICES_DATA, COMPANY_INFO } from "@/data/websiteData";
 import QuoteModal from "@/components/ui/QuoteModal";
 
@@ -19,17 +19,42 @@ export default function ServicesPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl"
+            className="max-w-3xl space-y-4"
           >
             <span className="text-xs font-black tracking-widest text-amber-400 uppercase">
-              Comprehensive Guttering & Roofing Solutions
+              Canterbury Guttering & Roofing Specialists
             </span>
             <h1 className="text-4xl sm:text-5xl font-black uppercase tracking-tight text-white mt-2">
-              OUR <span className="text-gradient-gold">SERVICES</span>
+              OUR <span className="text-gradient-gold">SERVICES & WARRANTIES</span>
             </h1>
-            <p className="text-base sm:text-lg text-slate-300 mt-4 leading-relaxed">
-              From new seamless continuous gutter installations to vacuum gutter cleaning and roof repairs, we protect your property against Canterbury weather.
+            <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
+              From marine-grade Colorsteel gutters and commercial vacuum cleaning to airless spray roof painting and full 30-year roof replacements.
             </p>
+
+            {/* Upfront Warranty Pill Bar */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+              <div className="bg-[#071526] border border-amber-400/30 p-3 rounded-xl flex items-center space-x-2.5">
+                <ShieldCheck className="w-5 h-5 text-amber-400 shrink-0" />
+                <div>
+                  <div className="text-xs font-black text-white">30-Year Roof Warranty</div>
+                  <div className="text-[10px] text-slate-400">Full roof replacements</div>
+                </div>
+              </div>
+              <div className="bg-[#071526] border border-amber-400/30 p-3 rounded-xl flex items-center space-x-2.5">
+                <ShieldCheck className="w-5 h-5 text-amber-400 shrink-0" />
+                <div>
+                  <div className="text-xs font-black text-white">15-Year Marine Colorsteel</div>
+                  <div className="text-[10px] text-slate-400">Gutters & downpipes</div>
+                </div>
+              </div>
+              <div className="bg-[#071526] border border-amber-400/30 p-3 rounded-xl flex items-center space-x-2.5">
+                <ShieldCheck className="w-5 h-5 text-amber-400 shrink-0" />
+                <div>
+                  <div className="text-xs font-black text-white">10-Year Leak Guarantee</div>
+                  <div className="text-[10px] text-slate-400">Zero water ingress</div>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -64,8 +89,8 @@ export default function ServicesPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 bg-slate-900/90 backdrop-blur-md border border-amber-400/30 p-3 rounded-xl flex items-center justify-between text-xs">
-                    <span className="text-amber-400 font-bold">15-Yr Gutter / 30-Yr Roof</span>
-                    <span className="text-slate-300">15% Price Beat</span>
+                    <span className="text-amber-400 font-bold">15% Price Beat</span>
+                    <span className="text-slate-300">Written Guarantee</span>
                   </div>
                 </div>
 
@@ -74,7 +99,7 @@ export default function ServicesPage() {
                   <div>
                     <div className="text-xs font-black tracking-widest text-amber-400 uppercase mb-1 flex items-center space-x-2">
                       <Zap className="w-3.5 h-3.5" />
-                      <span>Professional Canterbury Service</span>
+                      <span>Canterbury Craftsmanship</span>
                     </div>
                     <h2 className="text-2xl sm:text-3xl font-black uppercase text-white tracking-wide">
                       {service.title}

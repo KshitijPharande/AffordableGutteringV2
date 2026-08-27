@@ -292,8 +292,8 @@ export default function ContactPage() {
                     </div>
 
                     <div className="flex items-center space-x-2 text-xs text-slate-400">
-                      <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                      <span>15-Year Gutter & 30-Year Roof Warranty • 15% Price Beat Promise</span>
+                      <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
+                      <span>30-Yr Roof • 15-Yr Colorsteel Gutters • 10-Yr Leak-Free Guarantee • 15% Price Beat</span>
                     </div>
 
                     <motion.button

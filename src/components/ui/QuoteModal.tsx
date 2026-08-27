@@ -205,8 +205,8 @@ export default function QuoteModal({ isOpen, onClose, initialService }: QuoteMod
 
                   <div className="flex items-center justify-between pt-2">
                     <div className="flex items-center space-x-2 text-xs text-slate-400">
-                      <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                      <span>15-Yr Gutter & 30-Yr Roof Warranty • Zero Obligation</span>
+                      <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
+                      <span>30-Yr Roof • 15-Yr Colorsteel • 10-Yr Leak-Free Guarantee</span>
                     </div>
                     <motion.button
                       whileHover={{ scale: 1.02 }}

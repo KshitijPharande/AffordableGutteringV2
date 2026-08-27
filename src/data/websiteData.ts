@@ -37,8 +37,15 @@ export const COMPANY_INFO = {
   shortName: "Affordable Guttering",
   tagline: "We keep it affordable without compromising on quality.",
   quoteOffer: "We will beat any genuine quote by 15%!",
-  gutterWarranty: "15-Year Comprehensive Gutter & Downpipe Warranty",
-  roofWarranty: "30-Year Long-Life Roof Warranty",
+  warranties: [
+    { title: "30-Year Roof Replacement", desc: "Long-life heavy-gauge Colorsteel & membrane roofing warranty" },
+    { title: "15-Year Marine-Grade Colorsteel", desc: "For all new guttering, spouting & downpipe installations" },
+    { title: "10-Year Guarantee Against Leaks", desc: "Comprehensive leak-free guarantee on all gutters & downpipes" },
+    { title: "15% Price Beat Guarantee", desc: "We beat any written competitor quote across Canterbury" }
+  ],
+  roofWarranty: "30-Year Roof Replacement Warranty",
+  gutterWarranty: "15-Year Marine-Grade Colorsteel & Downpipe Warranty",
+  leakWarranty: "10-Year Guarantee Against Leaks for Gutters & Downpipes",
   experience: "20+ Years Local Canterbury Experience",
   phone: "0508 11 33 99",
   phoneRaw: "0508113399",
@@ -59,117 +66,154 @@ export const COMPANY_INFO = {
 
 export const SERVICES_DATA: ServiceItem[] = [
   {
-    id: "guttering-spouting",
-    slug: "gutter-installation-spouting",
-    title: "GUTTERING & SPOUTING",
-    shortDesc: "Heavy-duty Box, Quad & Half Round gutter replacements and precision spouting repairs.",
-    fullDesc: "Don't settle for flimsy, thin continuous gutters sold at inflated competitor markups. We supply and install heavy-gauge Colorsteel and commercial-grade aluminium profiles engineered to withstand Canterbury's torrential downpours and fierce winds.",
-    image: "/images/service-guttering.jpg",
-    features: [
-      "Heavy-gauge Box, Quad & Half Round profiles",
-      "Reinforced heavy-duty internal/external brackets",
-      "Optimal downpipe positioning for storm capacity",
-      "Backed by our 15-Year Gutter & Downpipe Warranty"
-    ],
-    pricingHint: "Free on-site assessment & 15% price beat guarantee",
-    iconName: "Shield"
-  },
-  {
     id: "gutter-cleaning",
     slug: "vacuum-gutter-cleaning",
-    title: "PROFESSIONAL GUTTER CLEANING",
-    shortDesc: "High-power vacuum extraction removing leaves, pine needles, and heavy mud without mess.",
-    fullDesc: "Our industrial-strength vacuum gutter cleaning reaches up to 3 storeys safely from the ground. We remove compacted sludge and flush downpipes, protecting your foundation from overflow damage.",
+    title: "GUTTER VACUUMING & CLEANING",
+    shortDesc: "High-power industrial vacuum extraction, downpipe flushing & anti-moss maintenance.",
+    fullDesc: "Our high-power industrial vacuum gutter cleaning system extracts wet sludge, leaves, pine needles, and mud from the safety of the ground up to 3 storeys. We flush downpipes and prevent blockages that cause interior flooding.",
     image: "/images/service-gutter-cleaning.jpg",
     features: [
-      "High-reach vacuum system – no roof walk damage",
-      "Full downpipe flush & drainage flow testing",
-      "Before & after photographic proof provided",
-      "Preventative maintenance to preserve your 15-yr warranty"
+      "High-power commercial vacuum extraction – no mess",
+      "Full downpipe unblocking & flow testing",
+      "Safe multi-storey reach without damaging roof tiles",
+      "Essential maintenance to keep gutters flowing freely"
     ],
     pricingHint: "Fast booking across Christchurch, Rangiora & Rolleston",
     iconName: "Sparkles"
   },
   {
+    id: "guttering-spouting",
+    slug: "gutter-installation-spouting",
+    title: "GUTTERING & DOWNPIPES",
+    shortDesc: "15-year marine-grade Colorsteel gutters & downpipes with a 10-year guarantee against leaks.",
+    fullDesc: "Don't settle for flimsy, thin continuous gutters sold at high competitor markups. We supply and install heavy-gauge marine-grade Colorsteel and commercial aluminium Box, Quad, and Half Round profiles engineered for Canterbury storms.",
+    image: "/images/service-guttering.jpg",
+    features: [
+      "15-Year Marine-Grade Colorsteel & Downpipe Warranty",
+      "10-Year Guarantee Against Leaks for Gutters & Downpipes",
+      "Heavy-gauge Box, Quad & Half Round profiles",
+      "Heavy-duty internal/external reinforced brackets"
+    ],
+    pricingHint: "Free on-site assessment & 15% price beat guarantee",
+    iconName: "Shield"
+  },
+  {
     id: "fascia-spouting",
     slug: "fascia-spouting-repairs",
-    title: "FASCIA & SPOUTING REPAIRS",
-    shortDesc: "Fascia board repair, timber rot replacement, and heavy-duty spouting realignment.",
-    fullDesc: "Rotten, sagging, or unlevel fascia causes water pooling and overflow. We restore timber fascia boards or install Colorsteel fascia capping for a durable, clean finish.",
+    title: "FASCIA REPAIRS & COLORSTEEL PANELS",
+    shortDesc: "Repainting all roof fascias, repairs and replacement, plus affordable Colorsteel fascia cover panels.",
+    fullDesc: "Complete fascia care: we repair and repaint all timber roof fascias, and install affordable Colorsteel fascia cover panels to encapsulate rotten timber or rusty sections, giving your home a brand new weatherproof exterior.",
     image: "/images/service-fascia.jpg",
     features: [
-      "Timber fascia repair & anti-rot treatments",
-      "Colorsteel fascia capping conversions",
-      "Laser-leveled fall for zero standing water",
-      "Complete soffit & barge board inspection"
+      "Affordable Colorsteel fascia panels to cover rotten timber or rust",
+      "Complete repainting and sealing of all roof fascias",
+      "Full timber fascia repairs, realignment and replacements",
+      "Seamless integration with new marine-grade Colorsteel gutters"
     ],
-    pricingHint: "Custom quotes with bundle discount for full replacement",
+    pricingHint: "Cost-effective alternative to costly full timber rebuilds",
     iconName: "Home"
   },
   {
     id: "roof-repairs",
     slug: "roof-repairs-restoration",
     title: "ROOF REPAIRS & MAINTENANCE",
-    shortDesc: "Tile replacements, leak repairs, flashing resealing, and ridge capping restoration.",
-    fullDesc: "Protect your home with specialized roof maintenance. From storm leaks and fractured concrete tiles to re-pointing ridge caps, we deliver durable fixes backed by our 30-Year Roof Warranty.",
+    shortDesc: "Tile replacements, leak repairs, flashing sealing, and ridge capping restoration.",
+    fullDesc: "Specialized Canterbury roof maintenance. From emergency storm leaks and cracked concrete tiles to re-pointing mortar ridge caps and flashing renewals, we deliver permanent repairs.",
     image: "/images/service-roof-repairs.jpg",
     features: [
       "Emergency leak detection & rapid storm sealing",
-      "Mortar re-bedding & flexible ridge pointing",
+      "Concrete tile replacement & flexible ridge pointing",
       "Valley iron, chimney & skylight flashing renewal",
-      "Backed by our 30-Year Long-Life Roof Warranty"
+      "Backed by our Canterbury workmanship guarantee"
     ],
     pricingHint: "Fast emergency response across Canterbury",
     iconName: "Wrench"
   },
   {
     id: "roof-painting",
-    slug: "roof-painting-coating",
-    title: "ROOF PAINTING & RESTORATION",
-    shortDesc: "High-pressure wash, rust inhibition, and multi-coat weatherproof membrane restoration.",
-    fullDesc: "Revitalize your tired Colorsteel or concrete tile roof. Our multi-coat protective membrane protects against extreme South Island UV rays, moss growth, and coastal weather.",
+    slug: "roof-painting-spray",
+    title: "ROOF SPRAY PAINTING & RESTORATION",
+    shortDesc: "Airless spray gun application with multi-coat weatherproof Colorsteel protective membrane.",
+    fullDesc: "We use professional high-pressure airless spray painting guns (never messy rollers) to achieve an even, high-build protective coating across corrugated iron and tile roofs. Includes anti-corrosion rust inhibitors and UV barrier technology.",
     image: "/images/service-roof-painting.jpg",
     features: [
-      "Moss/lichen kill wash & high-pressure cleaning",
-      "Anti-corrosive rust-converting primers",
-      "Dual-coat 100% acrylic protective membrane",
-      "30-Year Roof Warranty protection"
+      "Professional high-pressure airless spray gun application",
+      "Rust-converting primers & anti-corrosion barrier coats",
+      "Dual-coat 100% acrylic Colorsteel protective membrane",
+      "Extends roof lifespan by 20+ years with stunning curb appeal"
     ],
-    pricingHint: "Extends roof life by 20+ years at a fraction of replacement cost",
+    pricingHint: "Premium factory-like finish at a fraction of re-roofing cost",
     iconName: "Paintbrush"
+  },
+  {
+    id: "roof-washing",
+    slug: "roof-washing-moss-treatment",
+    title: "ROOF WASHING & MOSS TREATMENT",
+    shortDesc: "Soft-wash chemical treatment eliminating moss, lichen, black mold and South Island grime.",
+    fullDesc: "Gentle yet lethal moss and lichen eradication. We apply biodegradable biocidal treatments and low-pressure soft washing that clean your roof without lifting tiles or stripping factory coatings.",
+    image: "/images/about-gutter-water.jpg",
+    features: [
+      "Targeted moss, lichen & fungal spore elimination",
+      "Low-pressure soft wash protecting roof integrity",
+      "Pre-paint preparation & standalone maintenance",
+      "Prevents gutter damming and water capillary backup"
+    ],
+    pricingHint: "Recommended every 2–3 years for Canterbury roofs",
+    iconName: "Droplets"
+  },
+  {
+    id: "roof-replacement",
+    slug: "roof-replacement",
+    title: "ROOF REPLACEMENT (30-YEAR WARRANTY)",
+    shortDesc: "Full roof replacements with premium Colorsteel backed by an unmatched 30-year warranty.",
+    fullDesc: "Complete re-roofing solutions for residential Canterbury homes. We strip old corroded iron or brittle concrete tiles and install modern, insulated long-run Colorsteel roofing engineered to last generations.",
+    image: "/images/roof.jpg",
+    features: [
+      "30-Year Roof Replacement Warranty",
+      "Genuine NZ Colorsteel heavy-gauge profiles",
+      "Building code compliant insulation & underlay",
+      "Comprehensive warranty transferability"
+    ],
+    pricingHint: "Competitive quotes with 15% price beat promise",
+    iconName: "Building"
   }
 ];
 
 export const QUALITY_COMPARISON = [
   {
-    feature: "Material Gauge / Thickness",
-    ourQuality: "Heavy-Gauge 0.55mm+ Colorsteel & Thick Aluminium",
-    competitors: "Thin 0.40mm continuous coil (prone to denting & warping)"
-  },
-  {
-    feature: "Gutter & Downpipe Warranty",
-    ourQuality: "15-Year Comprehensive Warranty",
-    competitors: "Typically 2 to 5 years limited"
-  },
-  {
-    feature: "Roofing Workmanship Warranty",
-    ourQuality: "30-Year Long-Life Warranty",
+    feature: "Roof Replacement Warranty",
+    ourQuality: "30-Year Roof Replacement Warranty",
     competitors: "Standard 5 to 10 years"
   },
   {
-    feature: "Profile Options",
-    ourQuality: "High-Capacity Box, South Island Quad & Architectural Half Round",
-    competitors: "Only standard thin continuous style"
+    feature: "Gutter Material & Warranty",
+    ourQuality: "15-Year Marine-Grade Colorsteel & Downpipes",
+    competitors: "Thin 0.40mm coil with limited 2–5 years"
   },
   {
-    feature: "Storm & Heavy Rain Handling",
-    ourQuality: "Engineered high volumetric capacity & external overflow slots",
-    competitors: "Low volume capacity with frequent overflow into eaves"
+    feature: "Leak Guarantee",
+    ourQuality: "10-Year Guarantee Against Leaks for Gutters & Downpipes",
+    competitors: "No specific leak guarantee"
+  },
+  {
+    feature: "Roof Painting Application",
+    ourQuality: "High-Pressure Airless Spray Gun (Even Factory Coating)",
+    competitors: "Rollers or uneven brush coats"
+  },
+  {
+    feature: "Fascia Care & Solutions",
+    ourQuality: "Repainting + Affordable Colorsteel Panels for Rotten/Rusty Timber",
+    competitors: "Expensive total rebuilds or quick caulk fixes"
+  },
+  {
+    feature: "Gutter Cleaning",
+    ourQuality: "Commercial Vacuum System + Downpipe Flushing",
+    competitors: "Manual hand scooping (leaves sludge behind)"
   },
   {
     feature: "Pricing & Value",
     ourQuality: "Honest Fair Pricing + We Beat Any Quote by 15%",
-    competitors: "Inflated retail markups on cheap thin materials"
+    competitors: "Inflated retail markups"
   }
 ];
 
@@ -182,12 +226,12 @@ export const GUTTER_PROFILES: GutterProfile[] = [
     image: "/images/roof.jpg",
     bestFor: "Heavy rainfall intensity, modern architectural homes & low-pitch roofs",
     waterCapacity: "Maximum volumetric capacity for high-volume storm flow",
-    durability: "Heavy-gauge Colorsteel & marine-grade aluminium",
+    durability: "15-Year Marine-Grade Colorsteel & 10-Year Leak-Free Guarantee",
     features: [
       "Traditional Box shape for maximum water-carrying capacity",
       "Specifically engineered where fewer downpipes are desired",
       "Handles heavy rainfall intensity without overflowing",
-      "15-Year Comprehensive Gutter & Downpipe Warranty"
+      "15-Year Marine-Grade Colorsteel & 10-Year Leak Guarantee"
     ]
   },
   {
@@ -203,7 +247,7 @@ export const GUTTER_PROFILES: GutterProfile[] = [
       "Specifically designed, made and tested for the South Island environment",
       "Classic profile aesthetic with built-in overflow protection",
       "Seamless roll-formed on-site for custom fit",
-      "15-Year Comprehensive Gutter & Downpipe Warranty"
+      "15-Year Marine-Grade Colorsteel & 10-Year Leak Guarantee"
     ]
   },
   {
@@ -219,7 +263,7 @@ export const GUTTER_PROFILES: GutterProfile[] = [
       "Perfect for the classic kiwi home through to unique architectural designs",
       "Natural self-flushing contour reduces debris accumulation",
       "Architectural external bracket styling",
-      "15-Year Comprehensive Gutter & Downpipe Warranty"
+      "15-Year Marine-Grade Colorsteel & 10-Year Leak Guarantee"
     ]
   }
 ];
@@ -230,7 +274,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Sarah M.",
     location: "Christchurch",
     stars: 5,
-    quote: "Great service, on time and very professional. Our new gutters look amazing and handled the recent storm with zero issues. Highly recommended!",
+    quote: "Great service, on time and very professional. Our new marine-grade Colorsteel gutters look amazing and handled the storm with zero issues. 10-year leak guarantee gives great peace of mind!",
     service: "Full Gutter Replacement & Box Profile",
     date: "2 weeks ago"
   },
@@ -239,8 +283,8 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Mark T.",
     location: "Rolleston",
     stars: 5,
-    quote: "Replaced our old spouting and fascia boards. Excellent workmanship, polite crew, and the price was significantly cheaper than two other quotes we received.",
-    service: "Fascia & Spouting Repair",
+    quote: "They fitted Colorsteel fascia panels over our rotten timber fascias and painted the remaining trim. Saved us thousands compared to replacing all the timber! Brilliant job.",
+    service: "Colorsteel Fascia Panels & Spouting",
     date: "1 month ago"
   },
   {
@@ -248,8 +292,8 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "James K.",
     location: "Rangiora",
     stars: 5,
-    quote: "Quick response and did a fantastic job on our roof leak and ridge tile repairs. Wouldn't hesitate to use Affordable Guttering again.",
-    service: "Roof Tile & Ridge Capping Repairs",
+    quote: "Spray painted our tired corrugated roof with an airless spray gun. The finish is immaculate, like a brand new Colorsteel roof. Highly recommend Affordable Guttering.",
+    service: "Roof Spray Painting & Restoration",
     date: "3 weeks ago"
   },
   {
@@ -257,7 +301,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "David & Linda P.",
     location: "Riccarton, Christchurch",
     stars: 5,
-    quote: "They honoured their 15% price beat pledge without any hassle! The vacuum gutter cleaning and new downpipe install was prompt and spotless.",
+    quote: "The vacuum gutter cleaning was fast, mess-free and unblocked two jammed downpipes. Honoured their 15% price beat offer without hesitation.",
     service: "Vacuum Gutter Cleaning & Downpipes",
     date: "Just recently"
   }
@@ -265,27 +309,27 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const FAQS = [
   {
-    question: "What warranties do you provide on gutters and roofs?",
-    answer: "We provide an industry-leading 15-Year Comprehensive Warranty on all new gutter and downpipe installations, and an exceptional 30-Year Long-Life Warranty on all our roofing work and restorations."
+    question: "What specific warranties do you provide on gutters, downpipes, and roofs?",
+    answer: "We provide upfront, written guarantees: a 30-Year Warranty on Roof Replacements, a 15-Year Marine-Grade Colorsteel Warranty on new Gutters & Downpipes, and a 10-Year Guarantee Against Leaks for all gutters and downpipes."
   },
   {
-    question: "Why are your gutter profiles better than the thin continuous style sold by competitors?",
-    answer: "Many competitors install cheap, thin 0.40mm continuous coil at high markups. In Canterbury's strong winds, frost, and storms, thin gutters buckle, warp, and overflow easily. We install heavy-gauge (0.55mm+) Box, Quad, and Half Round profiles with reinforced brackets that will never sag and handle maximum water volume."
+    question: "How do you repair rotten or rusty roof fascias?",
+    answer: "We offer complete fascia restoration including repainting all timber roof fascias, structural repairs, and our popular affordable Colorsteel fascia cover panels that neatly encapsulate rotten timber or rusty sections for a permanent, low-maintenance finish without rebuilding the whole roof line."
+  },
+  {
+    question: "Why do you use spray painting instead of rollers for roof painting?",
+    answer: "We use professional high-pressure airless spray painting guns because spray application provides an even, thick, factory-grade membrane over corrugated ridges and tile profiles that rollers cannot achieve. It eliminates roller lap marks and ensures complete weatherproofing."
+  },
+  {
+    question: "Why is vacuum gutter cleaning better than manual cleaning?",
+    answer: "Our industrial-strength vacuum equipment sucks up heavy wet sludge, moss, and pine needles safely from the ground up to 3 storeys without risking roof damage. We also flush downpipes to ensure 100% unimpeded flow."
   },
   {
     question: "How does your 'Beat any quote by 15%' offer work?",
-    answer: "If you have received a written, itemized quote from any registered local Canterbury roofing or guttering company, simply show it to us. We will beat the total price by 15% guaranteed!"
+    answer: "If you have received a written, itemized quote from any registered local Canterbury roofing or guttering company, show it to us. We will beat the total price by 15% guaranteed!"
   },
   {
     question: "What areas of Canterbury do you service?",
     answer: "We cover Greater Christchurch, Rangiora, Rolleston, Kaiapoi, Riccarton, Fendalton, Selwyn, Sumner, Pegasus, and surrounding Canterbury rural districts."
-  },
-  {
-    question: "Do you specialize in gutter cleaning and maintenance?",
-    answer: "Yes! Professional vacuum gutter cleaning, downpipe flushing, and spouting repairs are our primary expertise. We keep your gutters free of blockages and prevent costly internal water damage."
-  },
-  {
-    question: "What is the difference between Box, Quad, and Half Round gutters?",
-    answer: "Quad is the South Island standard with overflow slots. Box profile provides maximum volumetric capacity for heavy rainfall on large roofs. Half Round offers superior self-cleaning flow and an elegant architectural heritage look."
   }
 ];

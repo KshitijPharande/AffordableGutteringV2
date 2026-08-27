@@ -3,42 +3,42 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Shield, Home, Wrench, Paintbrush, Building } from "lucide-react";
+import { Shield, Home, Sparkles, Paintbrush, Building } from "lucide-react";
 import QuoteModal from "../ui/QuoteModal";
 
 const SERVICES_LIST = [
   {
+    id: "gutter-cleaning",
+    title: "GUTTER VACUUMING",
+    desc: "High-power commercial vacuum cleaning & downpipe flushing.",
+    image: "/images/service-gutter-cleaning.jpg",
+    icon: Sparkles
+  },
+  {
     id: "guttering",
-    title: "GUTTERING",
-    desc: "New gutter installs, replacements, repairs – any job we do.",
+    title: "GUTTERING & DOWNPIPES",
+    desc: "15-yr Marine-Grade Colorsteel with a 10-year leak-free guarantee.",
     image: "/images/service-guttering.jpg",
     icon: Shield
   },
   {
     id: "fascia",
-    title: "FASCIA & SPOUTING",
-    desc: "Fascia and spouting replaced and repaired to protect your home.",
+    title: "FASCIA & COLORSTEEL PANELS",
+    desc: "Fascia repainting & affordable Colorsteel panels over rotten timber.",
     image: "/images/service-fascia.jpg",
     icon: Home
   },
   {
-    id: "roof-repairs",
-    title: "ROOF REPAIRS",
-    desc: "Leak repairs, tile replacements and ridge capping.",
-    image: "/images/service-roof-repairs.jpg",
-    icon: Wrench
-  },
-  {
     id: "roof-painting",
-    title: "ROOF PAINTING",
-    desc: "Roof painting and restoration to extend the life of your roof.",
+    title: "ROOF SPRAY PAINTING",
+    desc: "Airless spray gun application & weatherproof protective coatings.",
     image: "/images/service-roof-painting.jpg",
     icon: Paintbrush
   },
   {
     id: "roof-replacement",
     title: "ROOF REPLACEMENT",
-    desc: "Full roof replacements with quality materials built to last.",
+    desc: "30-Year warranty full roof replacements with genuine Colorsteel.",
     image: "/images/service-roof-replacement.jpg",
     icon: Building
   }
