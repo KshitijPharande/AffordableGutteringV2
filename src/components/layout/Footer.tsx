@@ -118,17 +118,28 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom copyright row */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-4">
+        {/* Bottom copyright & agency credit row */}
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-slate-400 gap-4 border-t border-slate-800/40 mt-2 text-center md:text-left">
           <div>
-            © {new Date().getFullYear()} {COMPANY_INFO.name} | Christchurch, New Zealand. All rights reserved.
+            © {new Date().getFullYear()} {COMPANY_INFO.name}. All rights reserved.
           </div>
-          <div className="flex items-center space-x-6">
+          <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2">
             <Link href="/" className="hover:text-amber-400 transition-colors">Home</Link>
             <Link href="/about" className="hover:text-amber-400 transition-colors">About Us</Link>
             <Link href="/services" className="hover:text-amber-400 transition-colors">Services</Link>
             <Link href="/products" className="hover:text-amber-400 transition-colors">Gutter Profiles</Link>
             <Link href="/contact" className="hover:text-amber-400 transition-colors">Contact</Link>
+          </div>
+          <div className="flex items-center justify-center space-x-1.5 text-slate-400">
+            <span>Designed & Developed by</span>
+            <a
+              href="https://www.lynkdigital.co.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-amber-400 hover:text-amber-300 hover:drop-shadow-[0_0_8px_rgba(245,158,11,0.7)] transition-all underline decoration-amber-400/40 hover:decoration-amber-300 ml-1"
+            >
+              Lynkdigital
+            </a>
           </div>
         </div>
       </div>
