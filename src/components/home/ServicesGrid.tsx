@@ -18,14 +18,14 @@ const SERVICES_LIST = [
     id: "guttering",
     title: "GUTTERING & DOWNPIPES",
     desc: "15-yr Marine-Grade Colorsteel with a 10-year leak-free guarantee.",
-    image: "/images/service-guttering.jpg",
+    image: "/images/real-job-gutter-finish.jpg",
     icon: Shield
   },
   {
     id: "fascia",
     title: "FASCIA & COLORSTEEL PANELS",
     desc: "Fascia repainting & affordable Colorsteel panels over rotten timber.",
-    image: "/images/service-fascia.jpg",
+    image: "/images/real-job-fascia-roofline.jpg",
     icon: Home
   },
   {

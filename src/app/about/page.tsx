@@ -91,23 +91,37 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Images Grid */}
+            {/* Real Project Photos Grid */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="relative h-64 rounded-2xl overflow-hidden shadow-xl border border-slate-800">
+              <div className="relative h-72 rounded-2xl overflow-hidden shadow-xl border border-amber-400/30 group">
                 <Image
-                  src="/images/service-guttering.jpg"
-                  alt="Quality gutter install Christchurch"
+                  src="/images/real-job-branded-installer.jpg"
+                  alt="Affordable Guttering Ltd tradesman on-site in Canterbury"
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#09182B]/80 via-transparent to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3 text-left">
+                  <span className="bg-amber-400 text-slate-950 text-[10px] font-black uppercase px-2 py-0.5 rounded shadow">
+                    On-Site Workmanship
+                  </span>
+                  <p className="text-[11px] font-bold text-white mt-1">Official Branded Canterbury Team</p>
+                </div>
               </div>
-              <div className="relative h-64 rounded-2xl overflow-hidden shadow-xl border border-slate-800 mt-8">
+              <div className="relative h-72 rounded-2xl overflow-hidden shadow-xl border border-amber-400/30 mt-6 group">
                 <Image
-                  src="/images/service-roof-painting.jpg"
-                  alt="Airless spray roof painting Christchurch roofer"
+                  src="/images/real-job-gutter-finish.jpg"
+                  alt="Finished Colorsteel veranda gutter installation"
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#09182B]/80 via-transparent to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3 text-left">
+                  <span className="bg-amber-400 text-slate-950 text-[10px] font-black uppercase px-2 py-0.5 rounded shadow">
+                    Finished Project
+                  </span>
+                  <p className="text-[11px] font-bold text-white mt-1">Seamless Colorsteel Gutters</p>
+                </div>
               </div>
             </div>
           </div>

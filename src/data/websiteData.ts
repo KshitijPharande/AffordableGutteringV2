@@ -87,7 +87,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     title: "GUTTERING & DOWNPIPES",
     shortDesc: "15-year marine-grade Colorsteel gutters & downpipes with a 10-year guarantee against leaks.",
     fullDesc: "Don't settle for flimsy, thin continuous gutters sold at high competitor markups. We supply and install heavy-gauge marine-grade Colorsteel and commercial aluminium Box, Quad, and Half Round profiles engineered for Canterbury storms.",
-    image: "/images/service-guttering.jpg",
+    image: "/images/real-job-gutter-finish.jpg",
     features: [
       "15-Year Marine-Grade Colorsteel & Downpipe Warranty",
       "10-Year Guarantee Against Leaks for Gutters & Downpipes",
@@ -103,7 +103,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     title: "FASCIA REPAIRS & COLORSTEEL PANELS",
     shortDesc: "Repainting all roof fascias, repairs and replacement, plus affordable Colorsteel fascia cover panels.",
     fullDesc: "Complete fascia care: we repair and repaint all timber roof fascias, and install affordable Colorsteel fascia cover panels to encapsulate rotten timber or rusty sections, giving your home a brand new weatherproof exterior.",
-    image: "/images/service-fascia.jpg",
+    image: "/images/real-job-fascia-roofline.jpg",
     features: [
       "Affordable Colorsteel fascia panels to cover rotten timber or rust",
       "Complete repainting and sealing of all roof fascias",
