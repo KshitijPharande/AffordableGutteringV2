@@ -32,6 +32,14 @@ export interface Testimonial {
   date: string;
 }
 
+export interface GalleryItem {
+  id: string;
+  title: string;
+  category: "all" | "guttering" | "fascia" | "cleaning" | "roofing";
+  image: string;
+  description: string;
+}
+
 export const COMPANY_INFO = {
   name: "Affordable Guttering & Roof Maintenance",
   shortName: "Affordable Guttering",
@@ -176,6 +184,121 @@ export const SERVICES_DATA: ServiceItem[] = [
     ],
     pricingHint: "Competitive quotes with 15% price beat promise",
     iconName: "Building"
+  }
+];
+
+export const GALLERY_ITEMS: GalleryItem[] = [
+  {
+    id: "gal-1",
+    title: "Official Branded Team On-Site Installation",
+    category: "guttering",
+    image: "/images/real-job-branded-installer.jpg",
+    description: "Our certified Affordable Guttering Ltd installer fitting Colorsteel downpipes and spouting on a Kiwi home."
+  },
+  {
+    id: "gal-2",
+    title: "Seamless Veranda Colorsteel Guttering",
+    category: "guttering",
+    image: "/images/real-job-gutter-finish.jpg",
+    description: "Heavy-gauge dark Colorsteel gutters with precision mitred external corners on veranda roofline."
+  },
+  {
+    id: "gal-3",
+    title: "Roofline, Timber Pergola & Fascia Restoration",
+    category: "fascia",
+    image: "/images/real-job-fascia-roofline.jpg",
+    description: "Complete fascia repairs, timber restoration, and new Colorsteel spouting integration."
+  },
+  {
+    id: "gal-4",
+    title: "Marine-Grade Round Downpipe Preparation",
+    category: "guttering",
+    image: "/images/real-job-downpipe-prep.jpg",
+    description: "Custom on-site assembly and precision cutting of heavy-gauge Colorsteel round downpipes."
+  },
+  {
+    id: "gal-5",
+    title: "Residential Gutter Replacement & Box Profile",
+    category: "guttering",
+    image: "/images/IMG_0104.JPG",
+    description: "Traditional high-capacity Box profile installation handling high-volume storm runoff."
+  },
+  {
+    id: "gal-6",
+    title: "Precision Downpipe Fitting & Sealing",
+    category: "guttering",
+    image: "/images/IMG_0113.JPG",
+    description: "Sealed Colorsteel downpipe connection with leak-free 10-year guarantee."
+  },
+  {
+    id: "gal-7",
+    title: "Custom Colorsteel Mitred Corner Craftsmanship",
+    category: "guttering",
+    image: "/images/IMG_0115.JPG",
+    description: "Hand-crafted seamless corner joins eliminating typical weak points and leaks."
+  },
+  {
+    id: "gal-8",
+    title: "Full Spouting & Fascia Board Overhaul",
+    category: "fascia",
+    image: "/images/IMG_0553.JPG",
+    description: "Rotten timber fascia encapsulated with affordable Colorsteel cover panels."
+  },
+  {
+    id: "gal-9",
+    title: "South Island Quad Profile Spouting",
+    category: "guttering",
+    image: "/images/IMG_0573.JPG",
+    description: "Classic South Island Quad profile with built-in overflow slots."
+  },
+  {
+    id: "gal-10",
+    title: "Airless Spray Gun Roof Membrane Coating",
+    category: "roofing",
+    image: "/images/service-roof-painting.jpg",
+    description: "High-pressure airless spray gun coating providing thick, even weatherproofing across corrugated roofing."
+  },
+  {
+    id: "gal-11",
+    title: "Commercial Vacuum Gutter Extraction",
+    category: "cleaning",
+    image: "/images/service-gutter-cleaning.jpg",
+    description: "Multi-storey commercial vacuum cleaning sucking up heavy wet mud and leaves without roof damage."
+  },
+  {
+    id: "gal-12",
+    title: "Long-Run Colorsteel Re-Roof (30-Yr Warranty)",
+    category: "roofing",
+    image: "/images/roof.jpg",
+    description: "Full residential roof replacement engineered with heavy-gauge Colorsteel."
+  },
+  {
+    id: "gal-13",
+    title: "Architectural Half Round Spouting Install",
+    category: "guttering",
+    image: "/images/products.jpg",
+    description: "Self-flushing architectural Half Round profile on contemporary Kiwi home."
+  },
+  {
+    id: "gal-14",
+    title: "Fascia Board Repainting & Colorsteel Panels",
+    category: "fascia",
+    image: "/images/IMG_7058.JPG",
+    description: "Clean Colorsteel panel cladding over weathered timber fascias."
+  },
+  {
+    id: "gal-15",
+    title: "Roof Tile & Ridge Capping Leak Repair",
+    category: "roofing",
+    image: "/images/IMG_7993 - Copy - Copy.JPG",
+    description: "Re-pointing fractured mortar ridge caps and replacing cracked tiles."
+  },
+  {
+    id: "gal-16",
+    title: "Canterbury Full Home Transformation",
+    category: "guttering",
+    image: "/images/IMG_8488.JPG",
+    description: "Complete guttering, downpipe replacement, and fascia protection package."
   }
 ];
 

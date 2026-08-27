@@ -55,6 +55,15 @@ export default function Footer() {
                   <span>Gutter Profiles (Box, Quad, Half Round)</span>
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/gallery"
+                  className="hover:text-amber-400 transition-colors flex items-center space-x-1.5 font-semibold text-white"
+                >
+                  <span className="text-amber-400">›</span>
+                  <span>Project Gallery (100% Real Jobs)</span>
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -128,6 +137,7 @@ export default function Footer() {
             <Link href="/about" className="hover:text-amber-400 transition-colors">About Us</Link>
             <Link href="/services" className="hover:text-amber-400 transition-colors">Services</Link>
             <Link href="/products" className="hover:text-amber-400 transition-colors">Gutter Profiles</Link>
+            <Link href="/gallery" className="hover:text-amber-400 transition-colors font-semibold text-amber-400">Gallery</Link>
             <Link href="/contact" className="hover:text-amber-400 transition-colors">Contact</Link>
           </div>
           <div className="flex items-center justify-center space-x-1.5 text-slate-400">
