@@ -24,7 +24,7 @@ export default function Footer() {
                 <li>• <strong className="text-white">30-Year</strong> Roof Replacement</li>
                 <li>• <strong className="text-white">15-Year</strong> Marine Colorsteel Gutters</li>
                 <li>• <strong className="text-white">10-Year</strong> Leak-Free Guarantee</li>
-                <li>• <strong className="text-amber-400">15% Price Beat</strong> on any quote</li>
+                <li>• <strong className="text-amber-400">100% Free</strong> On-Site Assessments</li>
               </ul>
             </div>
           </div>

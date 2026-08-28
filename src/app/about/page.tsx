@@ -85,7 +85,7 @@ export default function AboutPage() {
                   </li>
                   <li className="flex items-start space-x-2.5">
                     <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                    <span><strong className="text-white">15% Price Beat Pledge:</strong> We guarantee to beat any written competitor quote in Canterbury by 15%.</span>
+                    <span><strong className="text-white">100% Free On-Site Assessments:</strong> Comprehensive site inspections and clear, transparent fixed quotes.</span>
                   </li>
                 </ul>
               </div>
@@ -145,8 +145,8 @@ export default function AboutPage() {
               <div className="text-xs uppercase font-bold text-slate-300 mt-2">Leak-Free Guarantee</div>
             </div>
             <div>
-              <div className="text-4xl sm:text-5xl font-black text-amber-400">15%</div>
-              <div className="text-xs uppercase font-bold text-slate-300 mt-2">Price Beat Promise</div>
+              <div className="text-4xl sm:text-5xl font-black text-amber-400">20+</div>
+              <div className="text-xs uppercase font-bold text-slate-300 mt-2">Years Canterbury Exp.</div>
             </div>
           </div>
         </div>
@@ -189,7 +189,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-lg font-bold text-white uppercase mb-3">Honest & Transparent</h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                No hidden costs or surprise extras. We provide full written upfront quotes and will happily review competitor estimates to give you the 15% discount.
+                No hidden costs or surprise extras. We provide full written upfront quotes and honest pricing tailored to your exact property requirements.
               </p>
             </div>
           </div>

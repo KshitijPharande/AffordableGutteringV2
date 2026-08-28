@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://affordableguttering.co.nz"),
   title: "Affordable Guttering & Roof Maintenance | Christchurch, New Zealand",
-  description: "Canterbury's leading guttering and roofing specialists. Gutter installation, spouting repairs, vacuum cleaning & roof painting. We beat any quote by 15%!",
+  description: "Canterbury's leading guttering and roofing specialists. Gutter installation, spouting repairs, vacuum cleaning & roof painting. 10-Yr Leak-Free Guarantee!",
   keywords: [
     "Affordable Guttering",
     "Guttering Christchurch",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Affordable Guttering & Roof Maintenance" }],
   openGraph: {
     title: "Affordable Guttering & Roof Maintenance Christchurch",
-    description: "We will beat any quote by 15%! Quality guttering and roofing services you can rely on across Christchurch & Canterbury.",
+    description: "Quality guttering and roofing services you can rely on across Christchurch & Canterbury. 10-Yr, 15-Yr & 30-Yr Warranties.",
     url: "https://affordableguttering.co.nz",
     siteName: "Affordable Guttering & Roof Maintenance",
     images: [

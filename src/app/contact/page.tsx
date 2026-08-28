@@ -48,13 +48,13 @@ export default function ContactPage() {
             className="max-w-3xl"
           >
             <span className="text-xs font-black tracking-widest text-amber-400 uppercase">
-              Get In Touch & Beat Any Quote By 15%
+              Get In Touch & Free Assessment
             </span>
             <h1 className="text-4xl sm:text-5xl font-black uppercase tracking-tight text-white mt-2">
               CONTACT US & <span className="text-gradient-gold">FREE QUOTE</span>
             </h1>
             <p className="text-base sm:text-lg text-slate-300 mt-4 leading-relaxed">
-              Serving Christchurch, Rangiora, Rolleston & Canterbury. Request your free on-site assessment with our 15% price beat promise.
+              Serving Christchurch, Rangiora, Rolleston & Canterbury. Request your 100% free on-site assessment with transparent fixed pricing.
             </p>
           </motion.div>
         </div>
@@ -172,14 +172,14 @@ export default function ContactPage() {
                         REQUEST YOUR FREE QUOTE
                       </h2>
                       <p className="text-slate-300 text-xs sm:text-sm mt-1">
-                        Fill in your project details below. We will contact you promptly to schedule your assessment with our 15% price beat offer.
+                        Fill in your project details below. We will contact you promptly to schedule your free on-site assessment.
                       </p>
                     </div>
 
-                    {/* Service buttons */}
+                    {/* Service Selection */}
                     <div>
-                      <label className="block text-xs font-bold uppercase tracking-wider text-amber-400 mb-2">
-                        1. Service Required *
+                      <label className="block text-xs font-semibold uppercase tracking-wider text-amber-400 mb-2">
+                        1. Select Service *
                       </label>
                       <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                         {SERVICES_DATA.map((s) => (
@@ -189,8 +189,8 @@ export default function ContactPage() {
                             onClick={() => setService(s.id)}
                             className={`p-3 text-left rounded-xl border text-xs font-semibold transition-all ${
                               service === s.id
-                                ? "border-amber-400 bg-amber-500/20 text-white font-bold"
-                                : "border-slate-700 bg-slate-800/60 text-slate-300 hover:border-slate-500"
+                                ? "border-amber-400 bg-amber-500/20 text-white shadow-[0_0_15px_rgba(245,158,11,0.2)]"
+                                : "border-slate-700 bg-[#071526] text-slate-300 hover:border-slate-500"
                             }`}
                           >
                             {s.title}
@@ -199,9 +199,9 @@ export default function ContactPage() {
                       </div>
                     </div>
 
-                    {/* House Details */}
+                    {/* House Storeys */}
                     <div>
-                      <label className="block text-xs font-bold uppercase tracking-wider text-amber-400 mb-2">
+                      <label className="block text-xs font-semibold uppercase tracking-wider text-amber-400 mb-2">
                         2. House Storeys
                       </label>
                       <div className="grid grid-cols-3 gap-3">
@@ -217,7 +217,7 @@ export default function ContactPage() {
                             className={`p-3 text-center rounded-xl border text-xs font-medium transition-all ${
                               houseSize === st.id
                                 ? "border-amber-400 bg-amber-500/20 text-white font-bold"
-                                : "border-slate-700 bg-slate-800/60 text-slate-400 hover:border-slate-500"
+                                : "border-slate-700 bg-[#071526] text-slate-400 hover:border-slate-500"
                             }`}
                           >
                             {st.label}
@@ -226,7 +226,7 @@ export default function ContactPage() {
                       </div>
                     </div>
 
-                    {/* Name & Phone */}
+                    {/* Contact Inputs */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs font-medium text-slate-300 mb-1">Your Full Name *</label>
@@ -236,7 +236,7 @@ export default function ContactPage() {
                           placeholder="e.g. John Smith"
                           value={name}
                           onChange={(e) => setName(e.target.value)}
-                          className="w-full bg-[#071526] border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400"
+                          className="w-full bg-[#071526] border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400"
                         />
                       </div>
                       <div>
@@ -247,12 +247,11 @@ export default function ContactPage() {
                           placeholder="e.g. 021 123 4567"
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
-                          className="w-full bg-[#071526] border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400"
+                          className="w-full bg-[#071526] border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400"
                         />
                       </div>
                     </div>
 
-                    {/* Email & Location */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs font-medium text-slate-300 mb-1">Email Address</label>
@@ -261,15 +260,15 @@ export default function ContactPage() {
                           placeholder="name@example.co.nz"
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
-                          className="w-full bg-[#071526] border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400"
+                          className="w-full bg-[#071526] border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400"
                         />
                       </div>
                       <div>
-                        <label className="block text-xs font-medium text-slate-300 mb-1">Suburb / Location *</label>
+                        <label className="block text-xs font-medium text-slate-300 mb-1">Canterbury Location</label>
                         <select
                           value={location}
                           onChange={(e) => setLocation(e.target.value)}
-                          className="w-full bg-[#071526] border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400"
+                          className="w-full bg-[#071526] border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400"
                         >
                           {COMPANY_INFO.serviceAreas.map((area) => (
                             <option key={area} value={area} className="bg-slate-900 text-white">
@@ -281,10 +280,10 @@ export default function ContactPage() {
                     </div>
 
                     <div>
-                      <label className="block text-xs font-medium text-slate-300 mb-1">Project Details / Existing Quote Info</label>
+                      <label className="block text-xs font-medium text-slate-300 mb-1">Project Details / Specific Questions</label>
                       <textarea
                         rows={3}
-                        placeholder="Tell us about leaks, profile preference (Box, Quad, Half Round) or mention if you have an existing quote for 15% discount..."
+                        placeholder="Tell us about leaks, profile preference (Box, Quad, Half Round) or any specific questions..."
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         className="w-full bg-[#071526] border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400 resize-none"
@@ -293,7 +292,7 @@ export default function ContactPage() {
 
                     <div className="flex items-center space-x-2 text-xs text-slate-400">
                       <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-                      <span>30-Yr Roof • 15-Yr Colorsteel Gutters • 10-Yr Leak-Free Guarantee • 15% Price Beat</span>
+                      <span>30-Yr Roof • 15-Yr Colorsteel Gutters • 10-Yr Leak-Free Guarantee</span>
                     </div>
 
                     <motion.button
@@ -304,7 +303,7 @@ export default function ContactPage() {
                       className="w-full py-4 bg-gradient-to-r from-amber-400 via-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black text-sm uppercase tracking-wider rounded-xl shadow-lg hover:shadow-amber-500/25 transition-all flex items-center justify-center space-x-2 cursor-pointer"
                     >
                       <Send className="w-4 h-4" />
-                      <span>{loading ? "Submitting Quote Request..." : "SUBMIT FOR 15% BEAT QUOTE"}</span>
+                      <span>{loading ? "Submitting Quote Request..." : "REQUEST FREE ON-SITE ASSESSMENT"}</span>
                     </motion.button>
                   </form>
                 ) : (
@@ -352,7 +351,7 @@ export default function ContactPage() {
             </h2>
             <div className="w-16 h-1 bg-amber-400 mx-auto mt-3 rounded-full" />
             <p className="text-slate-400 text-xs sm:text-sm mt-2">
-              Everything you need to know about our Canterbury guttering, roof maintenance, and 15% price beat offer.
+              Everything you need to know about our Canterbury guttering, roof maintenance, and warranties.
             </p>
           </motion.div>
 

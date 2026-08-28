@@ -65,29 +65,27 @@ export default function HeroSection() {
               Professional guttering and roofing services you can rely on. Quality workmanship, honest pricing and guaranteed results across Canterbury.
             </motion.p>
 
-            {/* Upfront Warranties Grid matching client specs */}
+            {/* Clean Minimalist Upfront Warranties Bar */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
-              className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 pb-1 text-xs"
+              className="inline-flex flex-wrap items-center gap-x-3 gap-y-2 py-2 px-4 rounded-xl bg-slate-950/70 backdrop-blur-md border border-amber-400/30 text-xs sm:text-sm font-bold text-slate-200 shadow-lg"
             >
-              <div className="flex items-center space-x-2 bg-slate-950/60 border border-amber-400/30 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+              <span className="flex items-center space-x-1.5 text-amber-400">
                 <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
-                <span className="font-bold text-white">30-Year Roof Replacement</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-slate-950/60 border border-amber-400/30 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                <span>10-Year Warranty</span>
+              </span>
+              <span className="text-slate-600 hidden sm:inline">|</span>
+              <span className="flex items-center space-x-1.5 text-amber-400">
                 <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
-                <span className="font-bold text-white">15-Yr Marine-Grade Colorsteel</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-slate-950/60 border border-amber-400/30 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                <span>15-Year Warranty</span>
+              </span>
+              <span className="text-slate-600 hidden sm:inline">|</span>
+              <span className="flex items-center space-x-1.5 text-amber-400">
                 <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
-                <span className="font-bold text-white">10-Yr Leak-Free Guarantee</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-slate-950/60 border border-amber-400/30 px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                <Award className="w-4 h-4 text-amber-400 shrink-0" />
-                <span className="font-bold text-white">15% Price Beat Promise</span>
-              </div>
+                <span>30-Year Warranty</span>
+              </span>
             </motion.div>
 
             {/* CTA Button matching reference */}

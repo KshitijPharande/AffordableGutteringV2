@@ -66,7 +66,7 @@ export default function QualityComparisonSection() {
               15-Year Gutter & Downpipe Warranty + 30-Year Roof Warranty
             </h4>
             <p className="text-xs text-slate-300 mt-0.5">
-              Backed by our 15% Price Beat pledge: Top quality materials without the competitor price inflation.
+              Backed by our Canterbury guarantee package: Top quality materials without competitor markups.
             </p>
           </div>
           <a

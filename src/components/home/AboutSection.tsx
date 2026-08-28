@@ -36,7 +36,7 @@ export default function AboutSection() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 text-xs font-semibold text-slate-200">
               <div className="flex items-center space-x-2">
                 <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>15% Price Beat Guarantee</span>
+                <span>15-Year Marine Colorsteel</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />

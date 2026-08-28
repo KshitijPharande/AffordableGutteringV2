@@ -40,16 +40,26 @@ export interface GalleryItem {
   description: string;
 }
 
+export interface BeforeAfterItem {
+  id: string;
+  title: string;
+  category: string;
+  description: string;
+  beforeImage: string;
+  afterImage: string;
+  beforeLabel: string;
+  afterLabel: string;
+}
+
 export const COMPANY_INFO = {
   name: "Affordable Guttering & Roof Maintenance",
   shortName: "Affordable Guttering",
   tagline: "We keep it affordable without compromising on quality.",
-  quoteOffer: "We will beat any genuine quote by 15%!",
+  quoteOffer: "Free On-Site Assessments & Honest Fixed Quotes Across Canterbury",
   warranties: [
-    { title: "30-Year Roof Replacement", desc: "Long-life heavy-gauge Colorsteel & membrane roofing warranty" },
-    { title: "15-Year Marine-Grade Colorsteel", desc: "For all new guttering, spouting & downpipe installations" },
     { title: "10-Year Guarantee Against Leaks", desc: "Comprehensive leak-free guarantee on all gutters & downpipes" },
-    { title: "15% Price Beat Guarantee", desc: "We beat any written competitor quote across Canterbury" }
+    { title: "15-Year Marine-Grade Colorsteel", desc: "For all new guttering, spouting & downpipe installations" },
+    { title: "30-Year Roof Replacement", desc: "Long-life heavy-gauge Colorsteel & membrane roofing warranty" }
   ],
   roofWarranty: "30-Year Roof Replacement Warranty",
   gutterWarranty: "15-Year Marine-Grade Colorsteel & Downpipe Warranty",
@@ -71,6 +81,29 @@ export const COMPANY_INFO = {
     "Ashburton & Wider Canterbury"
   ]
 };
+
+export const BEFORE_AFTER_ITEMS: BeforeAfterItem[] = [
+  {
+    id: "lichen-cleaning",
+    title: "Lichen & Moss Treatment and Clean",
+    category: "Lichen & Moss Removal",
+    description: "Heavy lichen colonies and moss infestation treated, pressure-washed clean, and prepared for long-lasting protection.",
+    beforeImage: "/images/thumbnail_IMG_7099.jpg",
+    afterImage: "/images/thumbnail_IMG_7101.jpg",
+    beforeLabel: "Before: Heavy Lichen & Moss",
+    afterLabel: "After: Stripped & Cleaned Roof"
+  },
+  {
+    id: "gutter-overhaul",
+    title: "Fascia Prep & Continuous Colorsteel Gutter Installation",
+    category: "Continuous Guttering",
+    description: "Old failing gutters removed, timber fascia patched and sealed, followed by seamless marine-grade Colorsteel gutters installation.",
+    beforeImage: "/images/IMG_8259.JPG",
+    afterImage: "/images/thumbnail_IMG_4397 - Copy.jpg",
+    beforeLabel: "Old Gutters Removed & Fascia Prepped",
+    afterLabel: "Seamless Colorsteel Gutters Fitted"
+  }
+];
 
 export const SERVICES_DATA: ServiceItem[] = [
   {
@@ -102,7 +135,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Heavy-gauge Box, Quad & Half Round profiles",
       "Heavy-duty internal/external reinforced brackets"
     ],
-    pricingHint: "Free on-site assessment & 15% price beat guarantee",
+    pricingHint: "Free on-site assessment & transparent fixed quotes",
     iconName: "Shield"
   },
   {
@@ -127,7 +160,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     title: "ROOF REPAIRS & MAINTENANCE",
     shortDesc: "Tile replacements, leak repairs, flashing sealing, and ridge capping restoration.",
     fullDesc: "Specialized Canterbury roof maintenance. From emergency storm leaks and cracked concrete tiles to re-pointing mortar ridge caps and flashing renewals, we deliver permanent repairs.",
-    image: "/images/service-roof-repairs.jpg",
+    image: "/images/IMG_8186.JPG",
     features: [
       "Emergency leak detection & rapid storm sealing",
       "Concrete tile replacement & flexible ridge pointing",
@@ -182,242 +215,193 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Building code compliant insulation & underlay",
       "Comprehensive warranty transferability"
     ],
-    pricingHint: "Competitive quotes with 15% price beat promise",
+    pricingHint: "Competitive pricing with honest upfront quotes",
     iconName: "Building"
   }
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
-    id: "gal-1",
-    title: "Official Branded Team On-Site Installation",
+    id: "gal-branded-installer",
+    title: "Branded Team On-Site Downpipe Fitting",
     category: "guttering",
-    image: "/images/real-job-branded-installer.jpg",
-    description: "Our certified installer in official Affordable Guttering Ltd gear fitting Colorsteel downpipes and spouting on a Kiwi home."
-  },
-  {
-    id: "gal-2",
-    title: "Seamless Veranda Colorsteel Guttering",
-    category: "guttering",
-    image: "/images/real-job-gutter-finish.jpg",
-    description: "Heavy-gauge dark Colorsteel gutters with precision mitred external corners on veranda roofline."
-  },
-  {
-    id: "gal-3",
-    title: "Roofline, Timber Pergola & Fascia Restoration",
-    category: "fascia",
-    image: "/images/real-job-fascia-roofline.jpg",
-    description: "Complete fascia repairs, timber restoration, and new Colorsteel spouting integration."
-  },
-  {
-    id: "gal-4",
-    title: "Marine-Grade Round Downpipe Preparation",
-    category: "guttering",
-    image: "/images/real-job-downpipe-prep.jpg",
-    description: "Custom on-site assembly and precision cutting of heavy-gauge Colorsteel round downpipes."
-  },
-  {
-    id: "gal-5",
-    title: "Residential Gutter Replacement & Box Profile",
-    category: "guttering",
-    image: "/images/IMG_0104.JPG",
-    description: "Traditional high-capacity Box profile installation handling high-volume storm runoff."
-  },
-  {
-    id: "gal-6",
-    title: "Precision Downpipe Fitting & Sealing",
-    category: "guttering",
-    image: "/images/IMG_0113.JPG",
-    description: "Sealed Colorsteel downpipe connection with leak-free 10-year guarantee."
-  },
-  {
-    id: "gal-7",
-    title: "Custom Colorsteel Mitred Corner Craftsmanship",
-    category: "guttering",
-    image: "/images/IMG_0115.JPG",
-    description: "Hand-crafted seamless corner joins eliminating typical weak points and leaks."
-  },
-  {
-    id: "gal-8",
-    title: "Full Spouting & Fascia Board Overhaul",
-    category: "fascia",
     image: "/images/IMG_0553.JPG",
-    description: "Rotten timber fascia encapsulated with affordable Colorsteel cover panels."
+    description: "Our certified installer in official Affordable Guttering Ltd gear fitting Colorsteel downpipes on a Kiwi home."
   },
   {
-    id: "gal-9",
-    title: "South Island Quad Profile Spouting",
+    id: "gal-porch-gutter",
+    title: "Seamless Porch Colorsteel Spouting",
     category: "guttering",
     image: "/images/IMG_0573.JPG",
-    description: "Classic South Island Quad profile with built-in overflow slots."
+    description: "Continuous dark Colorsteel spouting with precision joins installed along residential veranda."
   },
   {
-    id: "gal-10",
-    title: "High-Reach Vacuum Gutter Extraction",
-    category: "cleaning",
+    id: "gal-downpipe-assembly",
+    title: "On-Site Downpipe Assembly & Custom Fabrication",
+    category: "guttering",
     image: "/images/IMG_6406.JPG",
-    description: "Safe ground-to-roof industrial vacuum cleaning removing compacted sludge and debris."
+    description: "Custom measuring, cutting, and bracket assembly of round Colorsteel downpipes on sawhorses on site."
   },
   {
-    id: "gal-11",
-    title: "Residential Roofline & Gutter Renewal",
-    category: "guttering",
-    image: "/images/IMG_6491.JPG",
-    description: "Complete spouting replacement protecting home foundations from water ingress."
-  },
-  {
-    id: "gal-12",
-    title: "Fascia Board Repainting & Colorsteel Panels",
+    id: "gal-pergola-spouting",
+    title: "Pergola Roofline & Colorsteel Guttering",
     category: "fascia",
-    image: "/images/IMG_7058.JPG",
-    description: "Clean Colorsteel panel cladding over weathered timber fascias."
-  },
-  {
-    id: "gal-13",
-    title: "Airless Spray Gun Roof Membrane Coating",
-    category: "roofing",
-    image: "/images/IMG_7825.JPG",
-    description: "High-pressure airless spray gun coating providing thick, even weatherproofing across corrugated roofing."
-  },
-  {
-    id: "gal-14",
-    title: "Roof Tile & Ridge Capping Mortar Restoration",
-    category: "roofing",
-    image: "/images/IMG_7993 - Copy - Copy.JPG",
-    description: "Re-pointing fractured mortar ridge caps and replacing damaged concrete tiles."
-  },
-  {
-    id: "gal-15",
-    title: "Roof Valley & Spouting Maintenance",
-    category: "roofing",
-    image: "/images/IMG_8003 - Copy.JPG",
-    description: "Valley iron inspection, clearing, and flashing resealing."
-  },
-  {
-    id: "gal-16",
-    title: "Commercial Vacuum Gutter Cleaning & Flow Test",
-    category: "cleaning",
-    image: "/images/IMG_8186.JPG",
-    description: "Downpipe flushed and certified 100% free of debris and blockages."
-  },
-  {
-    id: "gal-17",
-    title: "Heavy-Gauge Box Profile Colorsteel Installation",
-    category: "guttering",
-    image: "/images/IMG_8259.JPG",
-    description: "Traditional Box profile handling heavy rainfall intensity with fewer downpipes."
-  },
-  {
-    id: "gal-18",
-    title: "Pre-Paint Roof Soft Wash & Moss Treatment",
-    category: "roofing",
     image: "/images/IMG_8487.JPG",
-    description: "Biodegradable biocidal moss and lichen elimination preserving roof integrity."
+    description: "Continuous Colorsteel spouting fitted to freshly painted timber pergola and fascia."
   },
   {
-    id: "gal-19",
-    title: "Full Canterbury Home Spouting Transformation",
+    id: "gal-pergola-install",
+    title: "Continuous Gutter Alignment Along Eaves",
+    category: "guttering",
+    image: "/images/IMG_0104.JPG",
+    description: "Installer carefully securing continuous spouting along the timber pergola roofline."
+  },
+  {
+    id: "gal-mitred-corner-ext",
+    title: "Precision External Mitred Corner Join",
+    category: "guttering",
+    image: "/images/IMG_0113.JPG",
+    description: "Hand-crafted seamless external corner join on dark Colorsteel spouting."
+  },
+  {
+    id: "gal-mitred-corner-int",
+    title: "Seamless Internal Corner & Fascia Fit",
+    category: "guttering",
+    image: "/images/IMG_0115.JPG",
+    description: "Clean internal mitre joint with reinforced internal brackets and watertight seal."
+  },
+  {
+    id: "gal-roofline-prep",
+    title: "Roof Edge & Spouting Alignment Inspection",
+    category: "roofing",
+    image: "/images/IMG_6491.JPG",
+    description: "Checking metal roof overhang, screw fastenings, and fall alignment into new spouting."
+  },
+  {
+    id: "gal-screw-sealing-prep",
+    title: "Roof Screw & Ridge Sealing Preparation",
+    category: "roofing",
+    image: "/images/IMG_7058.JPG",
+    description: "Treating corrugated roof screw fixings and ridge cap flashings with protective sealant prior to coating."
+  },
+  {
+    id: "gal-gutter-mesh-flashing",
+    title: "Gutter Guard Mesh & Flashing Maintenance",
+    category: "guttering",
+    image: "/images/IMG_7825.JPG",
+    description: "Protective gutter mesh barrier and flashing seal installed on corrugated roofing to prevent leaf buildup."
+  },
+  {
+    id: "gal-valley-clearing",
+    title: "Heavy Roof Valley Debris & Blockage Clearing",
+    category: "cleaning",
+    image: "/images/IMG_7993 - Copy - Copy.JPG",
+    description: "Clearing thick leaf mulch, pine needles, and organic dams accumulated in corrugated roof valleys."
+  },
+  {
+    id: "gal-roofline-maintenance",
+    title: "Roofline Inspection & Eaves Maintenance",
+    category: "roofing",
+    image: "/images/IMG_8186.JPG",
+    description: "Installer conducting on-site roofline inspection, leak checking, and spouting maintenance on ladder."
+  },
+  {
+    id: "gal-fascia-prep",
+    title: "Fascia Board Sealing & Prep for New Spouting",
+    category: "fascia",
+    image: "/images/IMG_8259.JPG",
+    description: "Timber fascia prepared, repaired, and weatherproofed after old rusty gutters were removed."
+  },
+  {
+    id: "gal-full-home-transformation",
+    title: "Complete Canterbury Home Gutter Renewal",
     category: "guttering",
     image: "/images/IMG_8488.JPG",
-    description: "Complete guttering, downpipe replacement, and fascia protection package."
+    description: "Finished residential home fitted with continuous marine-grade Colorsteel gutters and downpipes."
   },
   {
-    id: "gal-20",
-    title: "Eaves Spouting & Downpipe Drainage Connection",
+    id: "gal-seamless-finish",
+    title: "Continuous Guttering Profile & Downpipe Outlet",
     category: "guttering",
     image: "/images/thumbnail_IMG_4397 - Copy.jpg",
-    description: "Clean connection to stormwater drainage with reinforced downpipe brackets."
+    description: "Finished Colorsteel continuous spouting with high-capacity storm flow into downpipe."
   },
   {
-    id: "gal-21",
-    title: "Colorsteel Valley Iron & Gutter Alignment",
+    id: "gal-gutter-profile-fall",
+    title: "Continuous Spouting Gradient & Clean Line",
     category: "guttering",
     image: "/images/thumbnail_IMG_4401.jpg",
-    description: "Laser-leveled gutter fall ensuring zero standing water or sagging."
+    description: "Precision-leveled gutter run ensuring smooth water flow without pooling or sagging."
   },
   {
-    id: "gal-22",
-    title: "Fascia Board Timber Repair & Preparation",
-    category: "fascia",
+    id: "gal-lichen-before",
+    title: "Severe Lichen & Moss Growth Before Treatment",
+    category: "cleaning",
     image: "/images/thumbnail_IMG_7099.jpg",
-    description: "Treating and restoring timber fascia before fitting Colorsteel protective capping."
+    description: "Heavy organic lichen and moss buildup across weathered concrete roof tiles before treatment."
   },
   {
-    id: "gal-23",
-    title: "Gutter Vacuum Clean Inspection",
+    id: "gal-lichen-after",
+    title: "Restored Tile Roof After Moss & Lichen Wash",
     category: "cleaning",
     image: "/images/thumbnail_IMG_7101.jpg",
-    description: "Spotless gutter channels and clear drain outlets after industrial vacuuming."
+    description: "Completely clean, lichen-free roof tiles following our gentle biocidal treatment and soft wash."
   },
   {
-    id: "gal-24",
-    title: "Multi-Storey Vacuum Gutter Clean",
+    id: "gal-moss-inspection",
+    title: "Pre-Treatment Roof Moss & Grime Assessment",
     category: "cleaning",
-    image: "/images/thumbnail_IMG_7102.jpg",
-    description: "Reaching high gutters safely without heavy ladders leaning on fragile spouting."
+    image: "/images/thumbnail_IMG_7099.jpg",
+    description: "Detailed roof inspection assessing biological growth across Canterbury tile roof."
   },
   {
-    id: "gal-25",
-    title: "Downpipe Sludge & Root Extraction",
-    category: "cleaning",
+    id: "gal-metal-reroof-grey",
+    title: "New Long-Run Colorsteel Roof Installation",
+    category: "roofing",
     image: "/images/thumbnail_IMG_7117.jpg",
-    description: "Removing stubborn downpipe clogs and restoring maximum storm flow."
+    description: "Complete metal roof replacement with crisp ridgelines, modern profile, and 30-year warranty."
   },
   {
-    id: "gal-26",
-    title: "Airless Spray Coating Coverage on Metal Roof",
+    id: "gal-airless-spray-finish",
+    title: "Airless Spray Protective Membrane Recoat",
     category: "roofing",
     image: "/images/thumbnail_IMG_7124.jpg",
-    description: "Thick, even acrylic membrane coverage with UV sun blockers."
+    description: "High-build acrylic roof membrane applied via airless spray gun for deep, even coverage."
   },
   {
-    id: "gal-27",
-    title: "Completed Colorsteel Roof Restoration Finish",
+    id: "gal-restored-metal-roof",
+    title: "Completed Corrugated Roof Restoration",
     category: "roofing",
     image: "/images/thumbnail_IMG_7125.jpg",
-    description: "Flawless factory-smooth roof finish with 30-year long-life protection."
+    description: "Weatherproofed corrugated iron roof renewed with anti-corrosion protective finish."
   },
   {
-    id: "gal-28",
-    title: "Colorsteel Gutter Corner Jointing",
-    category: "guttering",
-    image: "/images/thumbnail_image.png",
-    description: "Riveted and sealed internal bracket corner construction."
+    id: "gal-commercial-box-gutter",
+    title: "Commercial Internal Box Gutter & Parapet Flashing",
+    category: "roofing",
+    image: "/images/thumbnail_image (1).png",
+    description: "Heavy-duty commercial box gutter and Colorsteel roof replacement with full site scaffolding."
   },
   {
-    id: "gal-29",
-    title: "Timber Fascia Replacement & Paint Finish",
-    category: "fascia",
+    id: "gal-commercial-skylight",
+    title: "Skylight & Hip Flashing Installation",
+    category: "roofing",
     image: "/images/thumbnail_image (2).png",
-    description: "Repainted and sealed timber fascia boards matching window joinery."
+    description: "Precision-flashed skylight integration on new long-run trapezoidal metal roofing."
   },
   {
-    id: "gal-30",
-    title: "Full Spouting System & Downpipe Installation",
-    category: "guttering",
+    id: "gal-commercial-ridge-view",
+    title: "Commercial Colorsteel Roof Replacement",
+    category: "roofing",
     image: "/images/thumbnail_image (4).png",
-    description: "New marine-grade Colorsteel spouting with 15-year warranty."
+    description: "Full wide-angle view of completed industrial roof replacement engineered for Canterbury weather."
   },
   {
-    id: "gal-31",
-    title: "Colorsteel Corrugated Roof & Gutter Synergy",
+    id: "gal-commercial-scaffold-exterior",
+    title: "Commercial Building Re-Roofing Project",
     category: "roofing",
     image: "/images/thumbnail_image (7).png",
-    description: "Architectural corrugated Colorsteel roof and gutter synergy."
-  },
-  {
-    id: "gal-32",
-    title: "Airless Spray Gun Roof Painting In Progress",
-    category: "roofing",
-    image: "/images/service-roof-painting.jpg",
-    description: "Tradesperson in harness applying protective weatherproof membrane with airless spray gun."
-  },
-  {
-    id: "gal-33",
-    title: "Long-Run Colorsteel Roof Replacement (30-Yr Warranty)",
-    category: "roofing",
-    image: "/images/service-roof-replacement.jpg",
-    description: "Brand new dark charcoal Colorsteel corrugated long-run roofline with 30-year warranty."
+    description: "Full exterior view of commercial re-roofing project with certified safety scaffolding."
   }
 ];
 
@@ -453,9 +437,9 @@ export const QUALITY_COMPARISON = [
     competitors: "Manual hand scooping (leaves sludge behind)"
   },
   {
-    feature: "Pricing & Value",
-    ourQuality: "Honest Fair Pricing + We Beat Any Quote by 15%",
-    competitors: "Inflated retail markups"
+    feature: "Pricing & Transparency",
+    ourQuality: "Honest Fair Upfront Quotes with Zero Hidden Costs",
+    competitors: "Inflated retail markups & unexpected extras"
   }
 ];
 
@@ -543,7 +527,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "David & Linda P.",
     location: "Riccarton, Christchurch",
     stars: 5,
-    quote: "The vacuum gutter cleaning was fast, mess-free and unblocked two jammed downpipes. Honoured their 15% price beat offer without hesitation.",
+    quote: "The vacuum gutter cleaning was fast, mess-free and unblocked two jammed downpipes. Prompt, friendly and very fair pricing.",
     service: "Vacuum Gutter Cleaning & Downpipes",
     date: "Just recently"
   }
@@ -552,7 +536,7 @@ export const TESTIMONIALS: Testimonial[] = [
 export const FAQS = [
   {
     question: "What specific warranties do you provide on gutters, downpipes, and roofs?",
-    answer: "We provide upfront, written guarantees: a 30-Year Warranty on Roof Replacements, a 15-Year Marine-Grade Colorsteel Warranty on new Gutters & Downpipes, and a 10-Year Guarantee Against Leaks for all gutters and downpipes."
+    answer: "We provide upfront, written guarantees: a 10-Year Guarantee Against Leaks for gutters & downpipes, a 15-Year Marine-Grade Colorsteel Warranty on all new installations, and a 30-Year Warranty on Roof Replacements."
   },
   {
     question: "How do you repair rotten or rusty roof fascias?",
@@ -567,8 +551,8 @@ export const FAQS = [
     answer: "Our industrial-strength vacuum equipment sucks up heavy wet sludge, moss, and pine needles safely from the ground up to 3 storeys without risking roof damage. We also flush downpipes to ensure 100% unimpeded flow."
   },
   {
-    question: "How does your 'Beat any quote by 15%' offer work?",
-    answer: "If you have received a written, itemized quote from any registered local Canterbury roofing or guttering company, show it to us. We will beat the total price by 15% guaranteed!"
+    question: "How do you provide quotes for Canterbury jobs?",
+    answer: "We provide 100% free, no-obligation on-site assessments across Christchurch, Rangiora, Rolleston, and wider Canterbury with transparent, fixed pricing and no hidden costs."
   },
   {
     question: "What areas of Canterbury do you service?",

@@ -89,8 +89,8 @@ export default function ServicesPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 bg-slate-900/90 backdrop-blur-md border border-amber-400/30 p-3 rounded-xl flex items-center justify-between text-xs">
-                    <span className="text-amber-400 font-bold">15% Price Beat</span>
-                    <span className="text-slate-300">Written Guarantee</span>
+                    <span className="text-amber-400 font-bold">Free Assessment</span>
+                    <span className="text-slate-300">Written Fixed Quote</span>
                   </div>
                 </div>
 
